@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #242424;
+  color: white;
+}
+
+.my_bg {
+  background: rgb(61, 154, 107);
+  background: linear-gradient(180deg, rgba(61, 154, 107, 1) 35%, rgba(22, 92, 71, 1) 100%);
+}
+
+.home_logo {
+  object-fit: cover;
+  aspect-ratio: 4/4;
+}
+
+.circular-progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.circular-progress {
+  transform: rotate(-90deg);
+}
+
+.circular-progress-background {
+  fill: none;
+  stroke: #f0f0f0;
+}
+
+.circular-progress-fill {
+  fill: none;
+  /* stroke: #0078d7; */
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.circular-progress-text {
+  transform: rotate(90deg);
+  transform-origin: unset;
+  font-weight: bold;
+  /* fill: #0078d7; */
+}
